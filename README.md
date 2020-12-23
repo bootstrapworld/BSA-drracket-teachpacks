@@ -26,7 +26,7 @@ The following installation methods are equivalent:
 3. Run the following command in a terminal to install the files directly from GitHub:
 
 ```
-raco pkg install git://github.com//bootstrapworld/BSA-drracket-teachpacks.git
+raco pkg install git://github.com/bootstrapworld/BSA-drracket-teachpacks.git
 ```
 
 ### Use

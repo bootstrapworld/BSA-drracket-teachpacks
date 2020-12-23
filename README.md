@@ -7,7 +7,8 @@ The installation of the package will
 
 1. add the Bootstrap teachpacks to the Racket teachpack library collection.
 2. place a directory `bootstrap-files/` into the user's HOME directory.
-   **WARNING** If the there is a directory of the same name, it will be replaced.
+
+**WARNING** If the there is a directory of the same name, it will be replaced.
 
 ### Installation
 
@@ -37,6 +38,16 @@ For the Boosttrap images, add `(require teachpack/bootstrap/images)`
 to the top of the Definitions window.
 
 The uses of auxiliary teachpacks is illustrated in `bootstrap-files`. 
+
+### Content
+
+- `teachpack`
+  - `bootstrap` ~~ the actual teachpacks
+  - `bootstrap-files` ~~ the examples used for Fall 2020
+  - `info.rkt` ~~ the collections info file
+  - `post-install.rkt` ~~ a file for managing the collection installation
+- `README` ~~ this file 
+- `info.rkt` ~~ the package info file 
 
 ### Old 
 

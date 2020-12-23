@@ -1,4 +1,4 @@
-#lang scheme/gui
+#lang racket/gui
 
 (require (except-in 2htdp/universe space)
          (lib "prim.ss" "lang")
@@ -6,6 +6,8 @@
          2htdp/image
          (except-in htdp/testing test)
          (for-syntax scheme/base))
+(require teachpack/bootstrap/images)
+
 (provide EXAMPLE)
 
 (provide-higher-order-primitive start (rocket-height))
@@ -18,8 +20,7 @@
 ;(provide start space2 graph everything fibonacci factorial)
 
 ; dimensions: 
-(define ROCKET (scale 1/2 (bitmap "teachpack-images/rocket.png")))
-(define BACKGROUND (bitmap "teachpack-images/height.png"))
+(define ROCKET (scale 1/2 rocket-image))
 (define UNIVERSE-HEIGHT 4.35e+26)
 (define LOG-UNIVERSE-HEIGHT 61.33738)
 (define UNIVERSE-ZERO-PX 150)

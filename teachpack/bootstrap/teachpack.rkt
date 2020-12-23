@@ -1,4 +1,4 @@
-#lang scheme/gui
+#lang racket/gui
 
 (require 2htdp/universe
          lang/prim

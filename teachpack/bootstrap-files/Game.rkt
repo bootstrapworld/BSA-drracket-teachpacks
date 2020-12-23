@@ -11,7 +11,6 @@
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Graphics - danger, target, projectile and player images
-(define BACKGROUND (rectangle 640 480 "solid" "black"))
 (define DANGER (triangle 30 "solid" "red"))
 (define TARGET (circle 20 "solid" "green"))
 

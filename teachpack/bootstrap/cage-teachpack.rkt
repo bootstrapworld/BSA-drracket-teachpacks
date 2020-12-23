@@ -1,17 +1,17 @@
-#lang scheme/gui
+#lang racket/gui
 
 (require lang/prim
          lang/posn
          "bootstrap-common.rkt"
          (except-in htdp/testing test)
          (for-syntax scheme/base))
+(require teachpack/bootstrap/images)
+
 (provide (all-from-out "bootstrap-common.rkt"))
 (provide-higher-order-primitive start (onscreen?))
 
 (define WIDTH  640)
 (define HEIGHT 480)
-
-(define butterfly (bitmap "teachpack-images/butterfly.png"))
 
 ; a make-world is a (Number Number)
 ; each world has an x and y coordinate

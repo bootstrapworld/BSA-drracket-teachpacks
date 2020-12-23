@@ -1,9 +1,9 @@
 #lang info
 
 (define collection 'multi)
-(define pkg-desc "source for Fall 2020 Sw Dev web pages")
-(define pkg-authors '(matthias))
-(define version "0.1")
+(define pkg-desc "Bootstrap teachpacks and files")
+(define pkg-authors '("schanzer@bootstrapworld.org" "matthias@ccs.neu.edu"))
+(define version "0.2")
 
 (define deps
   `("base"))

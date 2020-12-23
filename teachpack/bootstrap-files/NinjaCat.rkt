@@ -3,6 +3,7 @@
 #reader(lib "htdp-beginner-reader.ss" "lang")((modname NinjaCat) (read-case-sensitive #t) (teachpacks ()) (htdp-settings #(#t constructor repeating-decimal #f #t none #f () #f)))
 (require 2htdp/image)
 (require 2htdp/universe)
+(require teachpack/bootstrap/images)
 
 ; a Player is a (make-player x y)
 (define-struct player (x y))
@@ -16,11 +17,7 @@
 (define ENEMY   (make-thing 600 390 5))
 (define RUBY    (make-thing 1500 250 10))
 (define CLOUD   (make-thing 700 100 5))
-(define player-image (bitmap "Teachpacks/teachpack-images/ninja.png"))
-(define cloud-image (bitmap "Teachpacks/teachpack-images/clouds.png"))
-(define ruby-image (bitmap "Teachpacks/teachpack-images/ruby.png"))
-(define dog-image (bitmap "Teachpacks/teachpack-images/dog.png"))
-(define bg-image (bitmap "Teachpacks/teachpack-images/bg.jpg"))
+
 ;; some sample worlds (at the start of the game, and at some random playing time)
 (define START  (make-world 0 0 PLAYER1 ENEMY RUBY CLOUD))
 (define PLAY   (make-world 0 0 PLAYER1 ENEMY (make-thing 300 250 20) (make-thing 100 100 20)))

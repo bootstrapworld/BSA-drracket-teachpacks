@@ -1,7 +1,8 @@
 ;; The first three lines of this file were inserted by DrRacket. They record metadata
 ;; about the language level of this file in a form that our tools can easily process.
 #reader(lib "htdp-beginner-reader.ss" "lang")((modname Game) (read-case-sensitive #t) (teachpacks ()) (htdp-settings #(#t constructor repeating-decimal #f #t none #f () #f)))
-(require teachpack/bootstrap/teachpack
+(require teachpack/bootstrap/teachpack)
+(require teachpack/bootstrap/images)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; 0. Game title: Write the title of your game here
@@ -13,15 +14,14 @@
 (define BACKGROUND (rectangle 640 480 "solid" "black"))
 (define DANGER (triangle 30 "solid" "red"))
 (define TARGET (circle 20 "solid" "green"))
-(define PLAYER (bitmap "Teachpacks/teachpack-images/rocket.png"))
 
-;; here's a screenshot of the game, with the PLAYER at (320, 240),
+;; here's a screenshot of the game, with the rocket-image at (320, 240),
 ;; the TARGET at (400 500) and the DANGER at (150, 200)
 (define SCREENSHOT (put-image DANGER
                                 150 200
                                 (put-image TARGET
                                            500 400
-                                           (put-image PLAYER
+                                           (put-image rocket-image
                                                       320 240
                                                       BACKGROUND))))
 
@@ -73,7 +73,7 @@
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; 3. Get our Player moving!
+;; 3. Get our rocket-image moving!
 
 ; update-player : Number String -> Number
 ; Given the player's y-coordinate and the name of a keyboard key, 
@@ -144,7 +144,7 @@
                      BACKGROUND 
                      DANGER update-danger
                      TARGET update-target
-                     PLAYER update-player
+                     rocket-image update-player
                      mystery update-mystery
                      *show-distances* line-length distance
                      collide? onscreen?))

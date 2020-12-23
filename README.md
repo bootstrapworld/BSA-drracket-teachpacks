@@ -10,10 +10,9 @@ The installation of the package will
 
 **WARNING** If the there is a directory of the same name, it will be replaced.
 
-### Installation
+### Installation and Uninstallation 
 
 The following installation methods are equivalent: 
-
 
 1. Use DrRacket's package installation functionality to install the package.
 
@@ -21,12 +20,24 @@ The following installation methods are equivalent:
 
 2. Use Racket's `raco` binary to install the package from the commandline via the package server.
 
--- not available yet -- 
+-- not available yet --
+
+To remove the package from your Racket installation,
+
+```
+tbd
+```
 
 3. Run the following command in a terminal to install the files directly from GitHub:
 
 ```
 raco pkg install git://github.com/bootstrapworld/BSA-drracket-teachpacks.git
+```
+
+To remove the package from your Racket installation,
+
+```
+raco pkg remove BSA-drracket-teachpacks
 ```
 
 ### Use

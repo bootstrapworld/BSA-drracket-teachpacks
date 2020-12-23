@@ -1,8 +1,12 @@
-#lang setup/infotab
+#lang info
 
-;; For internal use only.
-;;
-;; We mark this directory to be ignored by raco setup.  Files in this directory
-;; have deliberate syntax errors, and we don't want Racket to compile them
-;; on installation/compilation time.
-(define compile-omit-paths 'all)
+(define collection 'multi)
+(define pkg-desc "source for Fall 2020 Sw Dev web pages")
+(define pkg-authors '(matthias))
+(define version "0.1")
+
+(define deps
+  `("base"))
+
+(define build-deps
+  `("rackunit-lib"))

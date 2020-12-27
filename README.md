@@ -19,7 +19,7 @@ The following installation methods are equivalent:
 Use DrRacket's drop-down `File` menu and select `Install Package`. Enter
 
 ```
--- not available yet -- 
+BSA-drracket-teachpacks
 ```
 
 Alternatively, copy and paste this URL
@@ -30,12 +30,14 @@ into the
 
 2. Use Racket's `raco` binary to install the package from the commandline via the package server.
 
--- not available yet --
+```
+raco pkg install BSA-drracket-teachpacks
+```
 
 To remove the package from your Racket installation,
 
 ```
-tbd
+raco pkg remove BSA-drracket-teachpacks
 ```
 
 3. Run the following command in a terminal to install the files directly from GitHub:

@@ -15,8 +15,18 @@ The installation of the package will
 The following installation methods are equivalent: 
 
 1. Use DrRacket's package installation functionality to install the package.
+   
+Use DrRacket's drop-down `File` menu and select `Install Package`. Enter
 
+```
 -- not available yet -- 
+```
+
+Alternatively, copy and paste this URL
+```
+git://github.com/bootstrapworld/BSA-drracket-teachpacks.git
+```
+into the 
 
 2. Use Racket's `raco` binary to install the package from the commandline via the package server.
 
@@ -32,6 +42,13 @@ tbd
 
 ```
 raco pkg install git://github.com/bootstrapworld/BSA-drracket-teachpacks.git
+```
+
+If you want to make the package available for _all_ users of DrRacket,
+not just yourself, run instead 
+
+```
+raco pkg install --scope installation git://github.com/bootstrapworld/BSA-drracket-teachpacks.git
 ```
 
 To remove the package from your Racket installation,
